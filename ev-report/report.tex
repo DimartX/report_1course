@@ -1,0 +1,38 @@
+\documentclass[oneside, final, 10pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{fontspec} 
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic} 
+%\setmainfont[Ligatures={TeX,Historic}]{Times New Roman}
+\setmainfont{Times New Roman}
+
+\pagestyle{empty}
+\frenchspacing % без лишних отступов после знаков препинания
+\renewcommand{\bfdefault}{b} % нормальный полужирный 
+\righthyphenmin=2 % минимум переноса слов - 2 буквы
+\usepackage[normalem]{ulem} % для подчёркиваний uline
+\ULdepth = 0.20em % расстояние от линии до текста выше/ниже
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{10}{15}\selectfont}
+\usepackage{titlesec}
+\titlelabel{\thetitle.\quad}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titleformat{\section}[runin]{\normalfont\bfseries}{\thesection}{0.5cm}{}[]
+\usepackage{setspace}
+
+\usepackage[a4paper, left=1.5cm,right=1.5cm, top=1.5cm,bottom=1.5cm,bindingoffset=0cm]{geometry}
+
+
+
+\begin{document}
+
+\input{header}
+\input{first_page}
+\input{second_page}
+\input{third_page}
+\input{fourth_page}
+
+\end{document}
