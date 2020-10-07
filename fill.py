@@ -45,6 +45,7 @@ def stud():
     day = date_today.day
     month = month_ru[date_today.month]
     year = date_today.year
+    
 
     
     send(group)
@@ -54,12 +55,10 @@ def stud():
     send(day)
     send(month)
     send(year)
-    send("prep")
-    send("prep")
 
 def teacher():
-    doc = scan("Преподаватель(должность): ")
-    name = scan("каф.806 (ФИО) ")
+    doc = scan("Преподаватель (должность): ")
+    name = scan("ФИО: ")
     send(doc)
     send(name)
 
@@ -91,6 +90,7 @@ def main():
     file_number = 1
     lab_num_course()
     stud()
+    teacher()
     preamble()
     idea()
     scenario()
